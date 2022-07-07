@@ -1,0 +1,12 @@
+class Solution
+{
+    void deleteNode(Node del)
+    {
+Node temp=del;
+int val=del.data;
+del.data=del.next.data;
+del.next.data=val;
+temp.next=temp.next.next;
+
+    }
+}
